@@ -380,11 +380,7 @@ This project explores one possible answer by combining pattern detection, text a
 
 It is a practical demonstration of how multiple Python and machine-learning concepts can work together to solve a real-world-inspired problem.
 
-**Spot the Clues. Understand the Risk. Prioritize the Review.**
 
----
-
-##  16. About the Developer
 
 **Swetha Boga**
 
