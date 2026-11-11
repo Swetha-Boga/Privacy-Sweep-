@@ -13,6 +13,12 @@ That's the idea behind **PrivacySweep**.
 
 PrivacySweep is a machine-learning-based privacy-awareness prototype that checks text for Indian mobile-number patterns and public-exposure keywords. It combines simple detection rules with machine learning to help users identify descriptions that may need further review.
 
+[![Launch App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://kvqdl36pyeybwokcjwrwapp.streamlit.app/)
+
+👉 **[Try the live app here](https://kvqdl36pyeybwokcjwrwapp.streamlit.app/)**. No installation needed. Use fake numbers such as `9000000000` for testing. Sample numbers are synthetic, so please don't call or message them.
+
+![PrivacySweep Dashboard](dashboard.png)
+
 ---
 
 ##  01. The Real-World Problem
@@ -47,7 +53,7 @@ It then displays a review category on the dashboard.
 
 Imagine you enter:
 
-> Our business contact details are available in a public directory. Call 9876543210.
+> Our business contact details are available in a public directory. Call 9000000000.
 
 PrivacySweep identifies:
 
@@ -284,42 +290,34 @@ The objective is to make potential exposure indicators easier to notice and inve
 | IPyWidgets | Builds interactive dashboard controls |
 | Joblib | Saves and loads the trained model |
 | Jupyter Notebook | Development environment |
+| Streamlit | Hosted web dashboard |
 
 ---
 
 ##  11. How to Run the Project
 
-### Step 1 – Download the project
+### Option A – Use the live app (easiest)
+
+Open the hosted app: https://kvqdl36pyeybwokcjwrwapp.streamlit.app/
+
+The first load may take a few seconds if the app has been idle.
+
+### Option B – Run the web app locally
 
 ```bash
 git clone https://github.com/Swetha-Boga/Privacy-Sweep-.git
-```
-
-### Step 2 – Open the project folder
-
-```bash
 cd Privacy-Sweep-
-```
-
-### Step 3 – Install the required libraries
-
-If you use the provided requirements file:
-
-```bash
 pip install -r requirements.txt
+streamlit run app.py
 ```
 
-### Step 4 – Open the notebook
+The app opens in your browser at `http://localhost:8501`.
 
-Open the notebook file:
+### Option C – Run the notebook version
 
-`notebooks_PrivacySweep_Clean_GitHub.ipynb`
+Open `n_notebooks_PrivacySweep_Clean_GitHub.ipynb` in a Jupyter environment and run the cells in order.
 
-### Step 5 – Run the notebook
-
-Execute the notebook cells in order and interact with the dashboard.
-
-**Environment note:** PrivacySweep was developed in a browser-based Jupyter/Pyodide environment. The standard Python installation instructions may require adjustments in a local Jupyter environment.
+**Environment note:** The notebook was developed in a browser-based Jupyter/Pyodide environment. The standard Python installation instructions may require adjustments in a local Jupyter environment.
 
 ---
 
@@ -328,13 +326,15 @@ Execute the notebook cells in order and interact with the dashboard.
 ```text
 Privacy-Sweep-/
 │
-├── notebooks_PrivacySweep_Clean_GitHub.ipynb
+├── app.py
+├── n_notebooks_PrivacySweep_Clean_GitHub.ipynb
 ├── privacy_model.joblib
 ├── requirements.txt
+├── dashboard.png
+├── .streamlit/
+│   └── config.toml
 └── README.md
 ```
-
-Make sure these names match the actual files in the GitHub repository.
 
 ---
 
