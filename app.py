@@ -49,10 +49,10 @@ NEGATIVE_EXPOSURE_PHRASES = [
 SAMPLES = {
     "High Review Priority example": (
         "Contact details are available in this public business directory. "
-        "Call 9876543210 for further information."
+        "Call 9000000000 for further information."
     ),
     "Needs Verification example": (
-        "Spacious 2BHK flat for rent near the metro station. Call 9123456789."
+        "Spacious 2BHK flat for rent near the metro station. Call 9999999999."
     ),
     "No Review example": (
         "Spacious 2BHK flat for rent near the metro station. "
@@ -165,6 +165,11 @@ st.title("🛡️ PrivacySweep")
 st.caption(
     "Privacy Intelligence Dashboard · Detect exposure · Review risk · "
     "Prepare user-submitted removal requests"
+)
+
+st.info(
+    "Demo only. Please don't enter real personal data. The sample numbers "
+    "(such as 9000000000) are synthetic, so please don't call or message them."
 )
 
 tab_single, tab_batch, tab_history, tab_about = st.tabs(
